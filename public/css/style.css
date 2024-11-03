@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.menu {
+  padding: 2rem;
+}
+
+.menu .logo img {
+  width: 150px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+.lwrap {
+  width: 100%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: rgb(20, 19, 19);
+  margin-top: 40px;
+  line-height: 110%;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: rgb(20, 19, 19);
+  margin-top: 20px;
+  padding: 20px 80px 30px 0px;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.button > a {
+  display: grid;
+  place-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+.rwrap {
+  display: flex;
+  position: relative;
+  left: 150px;
+}
+
+.rwrap .img1 {
+  transform: rotate(10deg) translate(-200px, -65px);
+  transform-origin: center center;
+}
+
+.rwrap img {
+  width: 235px;
+  height: 300px;
+  object-fit: cover;
+  margin: 3px 15px;
+}
+
+.vdbtn {
+  display: flex;
+  place-items: center;
+  cursor: pointer;
+}
+
+.explore {
+  display: flex;
+  place-items: center;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.vdbtn img {
+  width: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1068px) {
+  .wrapper {
+    display: block;
+  }
+
+  .rwrap {
+    display: none;
+  }
+
+  .lwrap {
+    padding: 2rem;
+  }
+
+  .button {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+  }
+
+  .button > a {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.gallery {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  animation: diseapper 4s ease-in-out forwards 6s;
+}
+
+@keyframes diseapper {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 10px;
+  transform-style: preserve-3d;
+  transform: translateZ(1750px);
+  background-size: cover;
+}
+
+.block:nth-child(1) {
+  background-image: url("../assets/imgs/01.avif");
+  top: 30%;
+  left: 55%;
+}
+
+.block:nth-child(2) {
+  background-image: url("../assets/imgs/02.avif");
+  top: 20%;
+  left: 20%;
+}
+
+.block:nth-child(3) {
+  background-image: url("../assets/imgs/03.avif");
+  left: 30%;
+}
+
+.block:nth-child(4) {
+  background-image: url("../assets/imgs/04.avif");
+  top: 60%;
+  left: 40%;
+}
+
+.block:nth-child(5) {
+  background-image: url("../assets/imgs/05.avif");
+  top: 30%;
+  left: 30%;
+}
+
+.block:nth-child(6) {
+  background-image: url("../assets/imgs/06.avif");
+  top: 60%;
+  left: 60%;
+}
+
+.block:nth-child(7) {
+  top: 20%;
+  left: 50%;
+  background-image: url("../assets/imgs/07.avif");
+}
+
+.block:nth-child(8) {
+  top: 60%;
+  left: 10%;
+  background-image: url("../assets/imgs/08.avif");
+}
+
+.block:nth-child(9) {
+  top: 70%;
+  left: 30%;
+  background-image: url("./assets/imgs/09.avif");
+}
+
+.block:nth-child(10) {
+  top: 40%;
+  left: 60%;
+  background-image: url("../assets/imgs/10.avif");
+}
+
+.block:nth-child(11) {
+  top: 60%;
+  left: 25%;
+  background-image: url("../assets/imgs/11.avif");
+}
+
+.block:nth-child(12) {
+  top: 70%;
+  left: 50%;
+  background-image: url("../assets/imgs/12.avif");
+}
+
+.block:nth-child(13) {
+  top: 60%;
+  left: 25%;
+  background-image: url("../assets/imgs/13.avif");
+}
+
+.block:nth-child(14) {
+  top: 25%;
+  left: 25%;
+  background-image: url("../assets/imgs/14.avif");
+}
+
+.block:nth-child(15) {
+  top: 50%;
+  left: 10%;
+  background-image: url("../assets/imgs/15.avif");
+}
+
+.block:nth-child(16) {
+  top: 20%;
+  left: 70%;
+  background-image: url("../assets/imgs/16.avif");
+}
+
+.block:nth-child(17) {
+  top: 50%;
+  left: 30%;
+  background-image: url("../assets/imgs/17.avif");
+}
+
+.block:nth-child(18) {
+  top: 70%;
+  left: 50%;
+  background-image: url("../assets/imgs/18.avif");
+}
+
+.block:nth-child(19) {
+  top: 20%;
+  left: 50%;
+  background-image: url("../assets/imgs/19.avif");
+}
+
+.block:nth-child(20) {
+  top: 60%;
+  left: 10%;
+  background-image: url("../assets/imgs/20.avif");
+}
+
+.block:nth-child(21) {
+  top: 70%;
+  left: 50%;
+  background-image: url("../assets/imgs/21.avif");
+}
+
+.block:nth-child(22) {
+  top: 40%;
+  left: 60%;
+  background-image: url("../assets/imgs/22.avif");
+}
+
+.block:nth-child(23) {
+  top: 50%;
+  left: 30%;
+  background-image: url("../assets/imgs/23.avif");
+}
+
+.block:nth-child(24) {
+  top: 70%;
+  left: 50%;
+  background-image: url("../assets/imgs/24.avif");
+}

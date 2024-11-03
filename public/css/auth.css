@@ -1,0 +1,10 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.left{
+    background-image: linear-gradient(#00000088, #00000080), url(../assets/imgs/signup-bg.avif);
+    background-size: cover;
+    background-position: center;
+}
+
